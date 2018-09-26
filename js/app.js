@@ -1,8 +1,8 @@
 //-----Name-------
-
+let time = 10;
 //----Tamagotchi class
 class tamagotchi {
-  constructor(hunger, sleepiness, boredom, age) {
+  constructor(hunger, sleepiness, boredom, age, name) {
     this.hunger = 10;
     this.sleepiness = 10;
     this.boredom = 10;
@@ -40,7 +40,7 @@ $('#play').on('click', () => {
 
 //------Register name on screen after input box------
 const submitButton = $(".button").click(function () {
-	let userName = $('#userNameInput').val();
+	const userName = $('#userNameInput').val();
 	$('#userDisplay').html(userName);
 });
 
@@ -56,15 +56,23 @@ const lightsOff = () => {
 //------Timer Function----
 
 const setTimer = () => {
-  const timer = setInterval(() => {
+  const timer = setInterval(function() {
+    console.log(time);
     time--;
+    let $excercise = $('#boredom').val();
+    $excercise--;
+    $('#boredom').val($excercise)
 
-    if(tamagotchi.age % 10 === 0) {
-      age += 10;
-
-      console.log(tomagotchi.age);
+    if(time === 0) {
+      clearInterval(timer);
+      console.log('GAME OVER');
     }
-  })
-}
+  }, 1000);
+};
 
+
+$('.startBtn').on('click', () => {
+  setTimer();
+  console.log
+})
 //------POSSIBLE DEATH-----
