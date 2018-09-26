@@ -59,9 +59,26 @@ const setTimer = () => {
   const timer = setInterval(function() {
     console.log(time);
     time--;
+
     let $excercise = $('#boredom').val();
     $excercise--;
     $('#boredom').val($excercise)
+
+    let $eat = $('#hunger').val();
+    $eat--;
+    $('#hunger').val($eat)
+
+    let $lights = $('#sleepiness').val();
+    $lights--;
+    $('#sleepiness').val($lights)
+
+    let $age = $('#oldie').val();
+    $age+=10;
+    $('#oldie').val($age)
+
+    if ($age === 100) {
+      console.log('YOU DIED OF OLD AGE')
+    }
 
     if(time === 0) {
       clearInterval(timer);
@@ -73,6 +90,5 @@ const setTimer = () => {
 
 $('.startBtn').on('click', () => {
   setTimer();
-  console.log
 })
 //------POSSIBLE DEATH-----
