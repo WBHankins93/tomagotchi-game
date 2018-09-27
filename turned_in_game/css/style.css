@@ -1,0 +1,155 @@
+body {
+  align-content: center;
+  max-width: 750px;
+  background-image: url(https://orig00.deviantart.net/0b90/f/2012/050/c/8/c8073b1d26adc08b3a12cf3a28ef8532-d4q83ox.jpg);
+
+}
+
+header {
+  padding: 20px;
+}
+
+footer {
+  justify-content: flex-end;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  width: 55%;
+  height: 25px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.main-box {
+  background-color: yellow;
+  height: 500px;
+
+}
+
+.do {
+  padding: 10px;
+  border-radius: 30%;
+  height: 60px;
+  width: 60px;
+  margin: 5px 20px 5px 20px;
+}
+
+.do:hover {
+  background-color: blue;
+}
+
+#actions {
+  text-align: center;
+  /* background-color: blue; */
+  padding: 0;
+  border-style: solid;
+  border-width: thin;
+  width: 100%;
+  background: grey;
+}
+
+.petName {
+  margin: 10px;
+}
+#screen {
+  max-height: 600px;
+  border-style: solid;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://cdn.shopify.com/s/files/1/2011/3627/products/BF326_Enchanted_Pathway_grande.jpg?v=1507817072);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+  /* background: green;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%); */
+
+
+
+  /* margin: 25px 0 25px 0;
+  background-color: green;
+  width: 300px; */
+
+  /* grid-row-start: 5;
+  grid-column-start:2; */
+
+/* }  */
+
+#sidebar {
+  float: left;
+  background-color: grey;
+  border-style: solid;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 15px 30px 5px;
+  height: 400px;
+  top: 20%;
+  padding: 15px;
+}
+
+#feed {
+  margin: 10px;
+  height: 80px;
+  width: 160px;
+}
+
+#turnOff {
+  margin: 10px;
+  height: 80px;
+  width: 160px;
+}
+
+#play {
+  margin: 10px;
+  height: 80px;
+  width: 160px;
+}
+
+
+#oldie, #boredom, #hunger, #sleepiness {
+  padding: 35px;
+}
+
+.startBtn {
+  position: relative;
+  left: 300px;
+  margin: auto;
+
+}
+
+#mini {
+  height: 30px;
+  width: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#mini2 {
+  height: 30px;
+  width: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#finalForm {
+  height: 30px;
+  width: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}

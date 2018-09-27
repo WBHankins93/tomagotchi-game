@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+
+<body>
+  <header>
+      <marquee behavior="alternate">
+        <img id="title" src="https://vignette.wikia.nocookie.net/logopedia/images/7/74/Tamagotchi%21_logo.gif/revision/latest?cb=20140710050841">
+      </marquee>
+  </header>
+
+  <button class="startBtn" type="button" name="button">START</button>
+
+  <!-- <div class="main-box"> -->
+<div id="screen">
+    <div id="sidebar">
+      <ul>
+        <li>Hunger</li><progress id="hunger" value="10" max="10"></progress>
+        <li>Sleepiness</li><progress id="sleepiness" value="10" max="10"></progress>
+        <li>Boredom</li><progress id="boredom" value="10" max="10"></progress>
+        <li>Age</li><progress id="oldie" value="1" max="100"></progress>
+        <form type="number" class="getOlder" action="index.html" method="post"></form>
+      </ul>
+    </div>
+
+    <!-- <button class="startBtn" type="button" name="button">START</button> -->
+
+    <div class="petName">
+      <label for="name">Name:</label>
+      <input type="text" id="userNameInput">
+      <button class="button" type="submit" name="Name">Name Your Tamagotchi</button>
+      <p id="userDisplay"></p>
+    </div>
+
+    <!-- <div id="screen"> -->
+
+      <img class='tom' src="https://vignette.wikia.nocookie.net/tamagotchi/images/e/e5/Mametchi_standing.png/revision/latest?cb=20170726025553" alt="">
+
+    <!-- </div> -->
+
+
+      <div id="actions">
+
+        <button id="feed" class="do" type="button" name="button">Feed Me!</button>
+
+        <button id="turnOff" class="do" type="button" name="button">Turn off</button>
+
+        <button id="play" class="do" type="button" name="button">Play with me!</button>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="evolveStages">
+
+      <img id="mini" src="https://art.pixilart.com/08d3c456da1045a.png">
+      <img id="mini2" src="https://vignette.wikia.nocookie.net/tamagotchi/images/d/dd/Gozarutchi_anime.png/revision/latest?cb=20111010001018">
+      <img id="finalForm" src="https://vignette.wikia.nocookie.net/tamagotchi/images/b/b4/SuperUnchikun.png/revision/latest/scale-to-width-down/200?cb=20140329123552">
+    </div>
+
+    </footer>
+
+      <script src="js/app.js">
+
+      </script>
+</body>
+
+</html>
