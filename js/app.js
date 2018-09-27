@@ -39,7 +39,7 @@ $('#play').on('click', () => {
 
 
 //------Register name on screen after input box------
-const submitButton = $(".button").click(function () {
+const submitButton = $(".button").on('click', () => {
 	const userName = $('#userNameInput').val();
 	$('#userDisplay').html(userName);
 });

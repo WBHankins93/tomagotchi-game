@@ -19,30 +19,34 @@
   <div class="main-box">
 
     <div id="sidebar">
+      <img src="https://vignette.wikia.nocookie.net/tamagotchi/images/7/7c/Hitodetchi900.PNG/revision/latest/scale-to-width-down/200?cb=20110928231340" alt="">
+      <p id="userDisplay"></p>
       <ul>
+        <li>Age</li><progress id="oldie" value="1" max="100"></progress>
         <li>Hunger</li><progress id="hunger" value="10" max="10"></progress>
         <li>Sleepiness</li><progress id="sleepiness" value="10" max="10"></progress>
         <li>Boredom</li><progress id="boredom" value="10" max="10"></progress>
-        <li>Age</li><progress id="oldie" value="1" max="100"></progress>
         <form type="number" class="getOlder" action="index.html" method="post"></form>
       </ul>
     </div>
 
     <button class="startBtn" type="button" name="button">START</button>
 
+    <p id="userDisplay"></p>
+
     <div class="petName">
       <label for="name">Name:</label>
       <input type="text" id="userNameInput">
       <button class="button" type="submit" name="Name">Name Your Tamagotchi</button>
-      <p id="userDisplay"></p>
     </div>
 
-    <div id="screen">
+    <div class="screen">
 
-      <img id="ninja-head" src="https://files.slack.com/files-pri/T0351JZQ0-FD21G6JVD/head.png">
-      <img id="ninja-body" src="https://files.slack.com/files-pri/T0351JZQ0-FD21G8R63/body.png">
-      <img id="ninja-star" src="https://files.slack.com/files-pri/T0351JZQ0-FD2AGABE2/thing.png">
+
     </div>
+
+
+
 
 
       <div id="actions">
@@ -57,7 +61,7 @@
     </div>
 
     <footer>
-      <img src="https://vignette.wikia.nocookie.net/tamagotchi/images/6/64/ID-L_Gozarutchi.png/revision/latest?cb=20111011041334">
+      <img id="tinyNinja" src="https://vignette.wikia.nocookie.net/tamagotchi/images/6/64/ID-L_Gozarutchi.png/revision/latest?cb=20111011041334">
     </footer>
 
       <script src="js/app.js">
